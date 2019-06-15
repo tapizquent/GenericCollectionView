@@ -11,11 +11,13 @@ import UIKit
 enum GenericCellAction: Hashable {
     case didSelect
     case willDisplay
+    case custom(String)
     
     func hash(into hasher: inout Hasher) {
         switch self {
         case .didSelect: hasher.combine(0)
         case .willDisplay: hasher.combine(1)
+        case .custom(let custom): hasher.combine(custom)
         }
     }
     

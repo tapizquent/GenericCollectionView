@@ -27,7 +27,6 @@ open class GenericCollectionViewController: UICollectionViewController, UICollec
         self.viewModel = viewModel
         layout = UICollectionViewFlowLayout()
         super.init(collectionViewLayout: layout)
-        collectionDirector = GenericCollectionDirector(collectionView: self.collectionView, cells: self.viewModel.cells)
     }
     
     init(viewModel: GenericCollectionViewModel, layout: UICollectionViewFlowLayout) {
@@ -35,7 +34,7 @@ open class GenericCollectionViewController: UICollectionViewController, UICollec
         self.layout = layout
         super.init(collectionViewLayout: self.layout)
     }
-    
+    // Registers cells in given collectionView.
     func registerCells(items: [GenericCellConfigurator]) {
         for item in items {
             item.register(in: collectionView)
@@ -54,11 +53,14 @@ open class GenericCollectionViewController: UICollectionViewController, UICollec
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+    // Here is where subscription takes place.
+    // c can be any class than inherits from GenericCellConfigurator
     private func addHandlers() {
         self.collectionDirector.actionsProxy
             .on(.didSelect) { (c: TestCellConfigurator, cell) in
-                print("did select user cell")
+                let bigColorVC = BigColorVC()
+                bigColorVC.data = c.item
+                self.navigationController?.pushViewController(bigColorVC, animated: true)
             }
     }
 }

@@ -19,6 +19,7 @@
 		D098BF1122B422B10004A574 /* TestCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098BF1022B422B10004A574 /* TestCollectionCell.swift */; };
 		D098BF1322B427CA0004A574 /* GenericCollectionDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098BF1222B427CA0004A574 /* GenericCollectionDirector.swift */; };
 		D098BF1522B42F100004A574 /* GenericCellActionProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098BF1422B42F100004A574 /* GenericCellActionProxy.swift */; };
+		D0B2033C22B58EC400359529 /* BigColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2033B22B58EC400359529 /* BigColorVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D098BF1022B422B10004A574 /* TestCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionCell.swift; sourceTree = "<group>"; };
 		D098BF1222B427CA0004A574 /* GenericCollectionDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionDirector.swift; sourceTree = "<group>"; };
 		D098BF1422B42F100004A574 /* GenericCellActionProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCellActionProxy.swift; sourceTree = "<group>"; };
+		D0B2033B22B58EC400359529 /* BigColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigColorVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D098BF0F22B4229D0004A574 /* Test */,
-				D098BF0E22B422670004A574 /* Main */,
+				D098BF0E22B422670004A574 /* GenericCollection */,
 				D098BEE322B41CDE0004A574 /* AppDelegate.swift */,
 				D098BEED22B41CE50004A574 /* Assets.xcassets */,
 				D098BEEF22B41CE50004A574 /* LaunchScreen.storyboard */,
@@ -109,7 +111,7 @@
 			path = GenericCollectionViewTests;
 			sourceTree = "<group>";
 		};
-		D098BF0E22B422670004A574 /* Main */ = {
+		D098BF0E22B422670004A574 /* GenericCollection */ = {
 			isa = PBXGroup;
 			children = (
 				D098BF0622B41D230004A574 /* GenericCollectionViewController.swift */,
@@ -118,7 +120,7 @@
 				D098BF1222B427CA0004A574 /* GenericCollectionDirector.swift */,
 				D098BF1422B42F100004A574 /* GenericCellActionProxy.swift */,
 			);
-			path = Main;
+			path = GenericCollection;
 			sourceTree = "<group>";
 		};
 		D098BF0F22B4229D0004A574 /* Test */ = {
@@ -126,6 +128,7 @@
 			children = (
 				D098BF0C22B41F1E0004A574 /* TestViewModel.swift */,
 				D098BF1022B422B10004A574 /* TestCollectionCell.swift */,
+				D0B2033B22B58EC400359529 /* BigColorVC.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D098BF1522B42F100004A574 /* GenericCellActionProxy.swift in Sources */,
+				D0B2033C22B58EC400359529 /* BigColorVC.swift in Sources */,
 				D098BF0D22B41F1E0004A574 /* TestViewModel.swift in Sources */,
 				D098BF1122B422B10004A574 /* TestCollectionCell.swift in Sources */,
 				D098BF0B22B41D950004A574 /* ConfigurableCell.swift in Sources */,

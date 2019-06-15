@@ -15,7 +15,7 @@ protocol GenericCellConfigurator {
     func register(in: UICollectionView)
 }
 
-class CollectionCellConfigurator<CellType: ConfigurableCell, DataType>: GenericCellConfigurator where CellType.DataType == DataType, CellType: UICollectionReusableView {
+class CollectionCellConfigurator<CellType: GenericConfigurableCell, DataType>: GenericCellConfigurator where CellType.DataType == DataType, CellType: UICollectionReusableView {
     
     static var reuseId: String { return CellType.reuseIdentifier }
     

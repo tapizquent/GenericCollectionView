@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TestCollectionCell: UICollectionViewCell, ConfigurableCell {
+class TestCollectionCell: UICollectionViewCell, GenericConfigurableCell {
     
     static var defaultCellSize: CGSize? = CGSize(width: UIScreen.main.bounds.width, height: 150)
     
