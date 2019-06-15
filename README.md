@@ -1,0 +1,2 @@
+# GenericCollectionView
+A simpler collectionView
